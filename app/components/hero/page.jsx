@@ -38,7 +38,6 @@ export default function Hero() {
               </a>
             </div>
           </div>
-
         </div>
         <div className="hero-img">
           <Image width={600} height={600} src="/img/hero1.jpeg" />

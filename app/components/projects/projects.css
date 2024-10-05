@@ -2,7 +2,7 @@
   width: 1440px;
   margin: 40px auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 100px;
 
@@ -10,6 +10,203 @@
     color: white;
   }
 }
+
+.projecthero {
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .heroimg {
+    border-top: 10px double black;
+    border-left: 10px double black;
+    outline: 10px double rgb(102, 17, 28);
+    outline-offset: 10px;
+    transition: all 1s;
+    border-radius: 250px;
+  }
+
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+  }
+
+  .projects span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    transition: all 1s;
+    cursor: pointer;
+  }
+
+  span:hover {
+    transform: translateX(20px);
+  }
+
+  .projects span:nth-child(1) {
+    position: absolute;
+    top: -80px;
+    left: 220px;
+  }
+
+  .projects span:nth-child(1):hover ::before {
+    content: "Todo";
+    color: transparent;
+    -webkit-text-stroke: .1px rgba(255, 255, 255, 0.103);
+    font-size: 60px;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+  }
+
+  .projects span:nth-child(2) {
+    width: 300px;
+    position: relative;
+    top: 0px;
+    left: 40px;
+  }
+
+  .projects span:nth-child(2):hover ::before {
+    content: "Taş Kağıt Makas";
+    color: transparent;
+    -webkit-text-stroke: .1px rgba(255, 255, 255, 0.103);
+    font-size: 42px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  .projects span:nth-child(3) {
+    position: relative;
+    top: 0px;
+    left: 50px;
+  }
+
+  .projects span:nth-child(3):hover ::before {
+    content: "ShuffleWord";
+    color: transparent;
+    -webkit-text-stroke: .1px rgba(255, 255, 255, 0.103);
+    font-size: 50px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
+
+  .projects span:nth-child(4) {
+    position: relative;
+    top: 0px;
+    left: 20px;
+  }
+
+  .projects span:nth-child(4):hover ::before {
+    content: "Hesap Makinesi";
+    color: transparent;
+    -webkit-text-stroke: .1px rgba(255, 255, 255, 0.103);
+    font-size: 45px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  .projects span:nth-child(5) {
+    position: relative;
+    top: 0px;
+    left: 180px;
+  }
+
+  .projects span:nth-child(5) h2 {
+    color: white;
+  }
+
+
+  .projects span:nth-child(5):hover ::before {
+    content: "Tabu";
+    color: transparent;
+    -webkit-text-stroke: .1px rgba(255, 255, 255, 0.103);
+    font-size: 60px;
+    position: absolute;
+    top: -10px;
+    left: 0px;
+  }
+
+  .projects span:nth-child(6) {
+    position: relative;
+    top: 40px;
+    left: -90px;
+  }
+
+  .projects span:nth-child(6):hover ::before {
+    content: "NEXTJS";
+    color: transparent;
+    -webkit-text-stroke: .1px rgba(255, 255, 255, 0.103);
+    font-size: 60px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+  }
+
+  .projects span:nth-child(7) {
+    position: relative;
+    top: 20px;
+    left: -150px;
+  }
+
+  .projects span:nth-child(7):hover ::before {
+    content: "FİGMA";
+    color: transparent;
+    -webkit-text-stroke: .1px rgba(255, 255, 255, 0.103);
+    font-size: 60px;
+    line-height: 1;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
+
+
+
+}
+
+.projectText {
+  width: 500px;
+  display: grid;
+  gap: 30px;
+
+  p {
+    color: white;
+  }
+
+  a {
+    width: 170px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: all 1s;
+  }
+
+
+  a:hover {
+    background: white;
+    color: black;
+    border: 2px solid black;
+  }
+}
+
+
+.projectText h1 {
+  font-size: 40px;
+  color: transparent;
+  -webkit-text-stroke: .1px white;
+}
+
+
 
 @media (width <=1560px) {
 
@@ -65,7 +262,7 @@
   }
 }
 
-@media (width <=375px) { 
+@media (width <=375px) {
   .skill h1 {
     width: 375px;
     font-size: 30px;

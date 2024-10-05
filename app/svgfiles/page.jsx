@@ -73,9 +73,13 @@ export function Next() {
 
 export function CV() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg"  width={30} height={30} fill="currentColor"  viewBox="0 0 16 16">
+    <svg xmlns="http://www.w3.org/2000/svg" width={30} height={30} fill="currentColor" viewBox="0 0 16 16">
       <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
       <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z" />
     </svg>
   )
+}
+
+export function Home() {
+  return (<svg fill="#ffffff" width={30} height={30}  viewBox="0 0 36 36" version="1.1" preserveAspectRatio="xMidYMid meet" stroke="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>house-solid</title> <path class="clr-i-solid clr-i-solid-path-1" d="M33,19a1,1,0,0,1-.71-.29L18,4.41,3.71,18.71a1,1,0,0,1-1.41-1.41l15-15a1,1,0,0,1,1.41,0l15,15A1,1,0,0,1,33,19Z"></path><path class="clr-i-solid clr-i-solid-path-2" d="M18,7.79,6,19.83V32a2,2,0,0,0,2,2h7V24h6V34h7a2,2,0,0,0,2-2V19.76Z"></path> <rect x="0" y="0"  width={30} height={30} fill-opacity="0"></rect> </g></svg>)
 }
