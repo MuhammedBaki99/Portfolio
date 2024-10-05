@@ -1,0 +1,26 @@
+[
+  {
+    "image": "calculatorLogo.png",
+    "url": "https://calculator-peach-eight-88.vercel.app/index.html",
+    "baslik": "Hesap Makinesi",
+    "yazi": "Hesap Makinesi İhtiyacınız olduğunda burdan da rahatlıkla kullanabilirsiniz."
+  },
+  {
+    "image": "rock-paper-scissors.png",
+    "url": "https://rock-paper-scissors-orcin-two.vercel.app/",
+    "baslik": "Taş Kağıt Makas Oyunu",
+    "yazi": "Yıllardır Oynadığımız taş kağıt makas oyunu sizlerle"
+  },
+  {
+    "image": "shuffleword.png",
+    "url": "https://shuffle-word.vercel.app/",
+    "baslik": "ShuffleWord",
+    "yazi": "Farklı Farklı alanlardan oluşan kelimeleri klavye aracılığyla bilmeye çalıştığınız bir kelime oyunu"
+  },
+  {
+    "image": "todoLogo.png",
+    "url": "https://todo-app-ebon-kappa.vercel.app/",
+    "baslik": "Todo",
+    "yazi": "To-Do uygulaması, kullanıcıların görevlerini ekleyip, düzenleyip, tamamlamalarını ve takip etmelerini sağlayan basit bir görev yönetim aracıdır."
+  }
+]

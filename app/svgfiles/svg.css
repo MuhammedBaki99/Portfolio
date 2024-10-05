@@ -1,0 +1,90 @@
+.codes {
+  fill: #fff;
+  stroke-width: 0px;
+}
+
+.linked {
+  fill: #fff;
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: .5px;
+}
+
+.info-1 {
+  fill: #000;
+}
+
+.info-1,
+.info-2,
+.info-3,
+.info-4 {
+  stroke-width: 0px;
+}
+
+.info-2 {
+  fill: #42111c;
+}
+
+.info-3 {
+  fill: #66111c;
+}
+
+.info-4 {
+  fill: #fff;
+}
+
+
+.blog {
+  fill: #fff;
+  stroke-width: 0px;
+}
+
+.fil0 {
+  fill: black;
+  fill-rule: nonzero
+}
+
+.light {
+
+  .codes {
+    fill: white;
+  }
+
+  .linked {
+    fill: lightgray;
+    stroke: black;
+  }
+
+  .info-1 {
+    fill: black;
+  }
+
+  .info-1,
+  .info-2,
+  .info-3,
+  .info-4 {
+    stroke-width: 0px;
+  }
+
+  .info-2 {
+    fill: black;
+  }
+
+  .info-3 {
+    fill: lightgray;
+  }
+
+  .info-4 {
+    fill: white;
+  }
+
+  .blog {
+    fill: white;
+    stroke-width: 0px;
+  }
+
+  .dark {
+    fill: white;
+  }
+
+}

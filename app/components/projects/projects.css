@@ -1,0 +1,80 @@
+.projectContainer {
+  width: 1440px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+
+  h1 {
+    color: white;
+  }
+}
+
+@media (width <=1560px) {
+
+  .projectContainer {
+    width: 1280px;
+    gap: 50px;
+  }
+
+}
+
+
+@media (width <=1280px) {
+  .projectContainer {
+    width: 768px;
+    margin: 20px auto;
+    gap: 50px;
+    display: grid;
+    grid-template-areas:
+      "herotext herotext"
+      "heroimg skill";
+  }
+
+
+}
+
+
+@media (width <=1024px) {
+
+
+  .projectContainer {
+    gap: 50px;
+    display: grid;
+    grid-template-areas:
+      "herotext herotext"
+      "heroimg skill";
+  }
+
+}
+
+
+@media (width <=768px) {
+
+  .projectContainer {
+    width: 375px;
+    gap: 50px;
+    display: grid;
+    grid-template-areas:
+      "herotext"
+      "heroimg"
+      "skill";
+    align-items: center;
+    justify-items: end;
+  }
+}
+
+@media (width <=375px) {
+  .social {
+    flex-direction: column;
+  }
+
+  .skill h1 {
+    width: 375px;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    left: 0;
+  }
+}

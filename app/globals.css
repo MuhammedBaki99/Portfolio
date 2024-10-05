@@ -1,0 +1,47 @@
+::selection {
+  background-color: rgb(102, 17, 28);
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(102, 17, 28, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(102, 17, 28, 1);
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: bainsley;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: radial-gradient(circle at center center, transparent, rgb(33, 33, 33)), repeating-linear-gradient(135deg, rgb(33, 33, 33) 0px, rgb(33, 33, 33) 2px, transparent 2px, transparent 10px, rgb(33, 33, 33) 10px, rgb(33, 33, 33) 11px, transparent 11px, transparent 21px), repeating-linear-gradient(45deg, rgb(102, 17, 28) 0px, rgb(102, 17, 28) 4px, transparent 4px, transparent 8px), linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
+
+}
+
+.svg,
+.svg-result {
+  display: none;
+}
+
+.light {
+  ::selection {
+    background-color: rgb(59, 56, 56);
+    color: white;
+  }
+
+}
