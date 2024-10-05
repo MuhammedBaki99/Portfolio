@@ -65,11 +65,7 @@
   }
 }
 
-@media (width <=375px) {
-  .social {
-    flex-direction: column;
-  }
-
+@media (width <=375px) { 
   .skill h1 {
     width: 375px;
     font-size: 30px;

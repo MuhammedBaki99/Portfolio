@@ -1,3 +1,7 @@
+.skillmobile {
+  display: none;
+}
+
 .hero {
   width: 1440px;
   margin: 40px auto;
@@ -106,7 +110,7 @@
 .skill span:nth-child(1) {
   position: absolute;
   top: -40px;
-  left: 10px;
+  left: 30px;
 }
 
 .skill span:nth-child(2) {
@@ -197,7 +201,7 @@
 .skill span:nth-child(7) {
   position: relative;
   top: 20px;
-  left: -180px;
+  left: -150px;
 }
 
 .skill span:nth-child(7):hover ::before {
@@ -282,7 +286,7 @@
     top: 40px;
     left: -90px;
   }
-   
+
   .skill span:nth-child(7) {
     position: relative;
     top: 20px;
@@ -341,17 +345,44 @@
   .skill span:nth-child(1) {
     position: absolute;
     top: -20px;
-    left: -10px;
+    left: 20px;
+  }
+
+  .skill span:nth-child(2) {
+    position: relative;
+    top: 40px;
+    left: -100px;
+  }
+
+  .skill span:nth-child(3) {
+    position: relative;
+    top: 40px;
+    left: -70px;
+  }
+
+  .skill span:nth-child(4) {
+    position: relative;
+    top: 40px;
+    left: -50px;
+  }
+
+  .skill span:nth-child(5) {
+    position: relative;
+    top: 40px;
+    left: -70px;
+  }
+
+  .skill span:nth-child(6) {
+    position: relative;
+    top: 40px;
+    left: -100px;
   }
 
   .skill span:nth-child(7) {
-    display: flex;
-    align-items: center;
     position: relative;
-    top: 40px;
-    left: -190px;
+    top: 20px;
+    left: -160px;
   }
-
 }
 
 
@@ -405,14 +436,14 @@
 
   .skill span:nth-child(1) {
     position: absolute;
-    top: -40px;
-    left: 0px;
+    top: -20px;
+    left: 20px;
   }
 
   .skill span:nth-child(7) {
     position: relative;
-    top: 40px;
-    left: -200px;
+    top: 20px;
+    left: -170px;
   }
 }
 
@@ -425,7 +456,7 @@
   }
 
   .hero {
-    width: 375px;
+    width: 540px;
     gap: 50px;
     display: grid;
     grid-template-areas:
@@ -448,7 +479,6 @@
 
   .social {
     display: flex;
-    flex-direction: column;
   }
 
   .social img {
@@ -462,119 +492,41 @@
   }
 
   .hero-img img {
-    width: 50% !important;
-    height: 50% !important;
+    width: 70% !important;
+    height: 70% !important;
   }
 
   .skill {
+    display: none;
+  }
+
+  .skillmobile {
     width: 100%;
-    grid-area: skill;
-    margin: 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  .skill h1 {
-    width: 375px;
-    font-size: 30px;
+    gap: 40px;
     color: white;
-    position: relative;
-    text-align: center;
-    left: 0;
   }
 
-  .skill span:nth-child(1) {
-    position: relative;
-    top: 0px;
-    left: 0px;
-  }
+  .skillList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 
-  .skill span:nth-child(2) {
-    position: relative;
-    top: 0px;
-    left: 0px;
-  }
-
-  .skill span:nth-child(3) {
-    position: relative;
-    top: 0px;
-    left: 0px;
-  }
-
-  .skill span:nth-child(4) {
-    position: relative;
-    top: 0px;
-    left: 0px;
-  }
-
-  .skill span:nth-child(5) {
-    position: relative;
-    top: 0px;
-    left: 0px;
-  }
-
-  .skill span:nth-child(6) {
-    position: relative;
-    top: 0px;
-    left: 0px;
-  }
-
-  .skill span:nth-child(7) {
-    position: relative;
-    top: 0px;
-    left: 0px;
-  }
-
-  .skill span:nth-child(2):hover ::before {
-    z-index: -1;
-    color: rgba(255, 255, 255, 0.096);
-    -webkit-text-stroke: none;
-  }
-
-  .skill span:nth-child(3):hover ::before {
-    z-index: -1;
-    color: rgba(255, 255, 255, 0.096);
-    -webkit-text-stroke: none;
-  }
-
-  .skill span:nth-child(4):hover ::before {
-    z-index: -1;
-    color: rgba(255, 255, 255, 0.096);
-    -webkit-text-stroke: none;
-  }
-
-  .skill span:nth-child(5):hover ::before {
-    z-index: -1;
-    color: rgba(255, 255, 255, 0.096);
-    -webkit-text-stroke: none;
-  }
-
-  .skill span:nth-child(6):hover ::before {
-    z-index: -1;
-    color: rgba(255, 255, 255, 0.096);
-    -webkit-text-stroke: none;
-  }
-
-  .skill span:nth-child(7):hover ::before {
-    z-index: -1;
-    color: rgba(255, 255, 255, 0.096);
-    -webkit-text-stroke: none;
-  }
-
-  @media (width <=375px) {
-    .social {
+    span {
+      color: white;
+      display: flex;
       flex-direction: column;
+      align-items: center;
     }
+  }
 
-    .skill h1 {
-      width: 375px;
-      font-size: 30px;
-      position: relative;
-      text-align: center;
-      left: 0;
-    }
+}
+
+@media (width <=375px) {
+  .social {
+    display: flex;
   }
 }

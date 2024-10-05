@@ -72,6 +72,38 @@ export default function Hero() {
             <h2>Figma</h2>
           </span>
         </div>
+
+        <div className="skillmobile">
+          <span>
+            <h1>Yeteneklerim</h1>
+          </span>
+          <div className="skillList">
+            <span>
+              <Image width={30} height={30} src="/img/html.png" alt="html logosu" />
+              <h2>HTML</h2>
+            </span>
+            <span>
+              <Image width={30} height={30} src="/img/css.png" alt="css logosu" />
+              <h2>CSS</h2>
+            </span>
+            <span>
+              <Image width={30} height={30} src="/img/javascript.png" alt="javascript logosu" />
+              <h2>javascript</h2>
+            </span>
+            <span>
+              <Image width={30} height={30} src="/img/react.png" alt="react logosu" />
+              <h2>React</h2>
+            </span>
+            <span>
+              <Next alt="adobe illustrator logosu" />
+              <h2>NextJS</h2>
+            </span>
+            <span>
+              <Image width={30} height={30} src="/img/figma.png" alt="figma logosu" />
+              <h2>Figma</h2>
+            </span>
+          </div>
+        </div>
       </div>
 
     </>
