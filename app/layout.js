@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import "./globals.css";
+import "./assets/globals.css";
 import Header from "./header/page";
 
 const bainsley = localFont({
