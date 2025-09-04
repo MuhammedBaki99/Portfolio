@@ -9,7 +9,7 @@ export default function Header() {
   const items = [
     { label: "Anasayfa", href: "#anasayfa" },
     { label: "Hakkımda", href: "#hakkımda" },
-    { label: "Yetenekler", href: "#" },
+    { label: "Yetenekler", href: "#skills" },
     { label: "Projelerim", href: "#" },
   ];
   const headerRef = useRef<HTMLDivElement>(null);
