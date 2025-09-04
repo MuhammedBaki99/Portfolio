@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header"; 
+import Header from "@/components/header";
+import ClickSpark from "@/components/reactbits/clickspark";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,9 +31,17 @@ export default function RootLayout({
     <html lang="tr">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background`}
-      > 
-        <Header /> 
-        {children}
+      >
+        <ClickSpark
+          sparkColor='#fff'
+          sparkSize={10}
+          sparkRadius={15}
+          sparkCount={8}
+          duration={400}
+        >
+          <Header />
+          {children}
+        </ClickSpark>
       </body>
     </html>
   );

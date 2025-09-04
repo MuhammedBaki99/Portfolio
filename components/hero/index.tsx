@@ -2,17 +2,16 @@ import Threads from "../reactbits/Threads";
 import SplitText from "../reactbits/SplitText";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-import TextType from "../reactbits/Texttype";
-import Image from "next/image";
+import TextType from "../reactbits/Texttype"; 
 
 export default function Hero() {
   const links = [
-    { icon: "mdi:linkedin", href: "#" },
-    { icon: "mdi:github", href: "#" },
-    { icon: "ph:read-cv-logo-duotone", href: "#" },
+    { icon: "mdi:linkedin", href: "https://www.linkedin.com/in/muhammed-baki-%C3%A7a%C4%9Flayan-a2110128b/" },
+    { icon: "mdi:github", href: "https://github.com/MuhammedBaki99" },
+    { icon: "ph:read-cv-logo-duotone", href: "/CV.pdf" },
   ];
   return (
-    <div className="size-full relative py-20">
+    <section id="anasayfa" className="size-full relative min-h-screen">
       <Threads
         amplitude={1}
         distance={0}
@@ -55,14 +54,14 @@ export default function Hero() {
         /> 
       </div>
 
-      <div className="flex items-center gap-2 absolute left-1/15 bottom-0">
+      <div className="flex items-center gap-2 absolute left-1/15 bottom-10">
         {
           links.map((x, i) =>
-            <Link key={i} href={x.href} className="text-foreground">
-              <Icon icon={x.icon} width="32" height="32" />
+            <Link key={i} href={x.href} target="_blank" className="text-foreground">
+              <Icon icon={x.icon} width="40" height="40" />
             </Link>)
         }
       </div>
-    </div>
+    </section>
   )
 }

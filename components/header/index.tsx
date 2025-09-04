@@ -7,8 +7,8 @@ import gsap from "gsap";
 
 export default function Header() {
   const items = [
-    { label: "Anasayfa", href: "#" },
-    { label: "Hakkımda", href: "#" },
+    { label: "Anasayfa", href: "#anasayfa" },
+    { label: "Hakkımda", href: "#hakkımda" },
     { label: "Yetenekler", href: "#" },
     { label: "Projelerim", href: "#" },
   ];
@@ -33,7 +33,7 @@ export default function Header() {
   return (
     <div
       ref={headerRef}
-      className="w-full flex justify-between items-center gap-20 p-2"
+      className="w-full flex justify-between items-center gap-20 p-2 fixed top-0 bg-card z-99"
     >
       <GooeyNav
         items={items}
