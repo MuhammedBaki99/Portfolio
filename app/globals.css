@@ -165,3 +165,26 @@ body {
   background: var(--primary);
   color: black;
 }
+body::-webkit-scrollbar {
+  width: 12px;
+  background: #1a1a1a;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #7c0a02 60%, #111 100%);
+  border-radius: 8px;
+  border: 2px solid #1a1a1a;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #a4161a 70%, #222 100%);
+}
+
+body::-webkit-scrollbar-corner {
+  background: #1a1a1a;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #7c0a02 #1a1a1a;
+}
