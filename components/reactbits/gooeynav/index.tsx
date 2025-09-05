@@ -9,7 +9,6 @@ interface GooeyNavItem {
 
 export interface GooeyNavProps {
   items: GooeyNavItem[];
-  animationTime?: number;
   particleCount?: number;
   particleDistances?: [number, number];
   particleR?: number;
@@ -20,7 +19,6 @@ export interface GooeyNavProps {
 
 const GooeyNav: React.FC<GooeyNavProps> = ({
   items,
-  animationTime = 600,
   initialActiveIndex = 0
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);

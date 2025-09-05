@@ -1,5 +1,6 @@
- 
+
 import LogoLoop from '../reactbits/logoloop';
+import Image from 'next/image';
 import { Icon } from '@iconify/react';
 
 const techLogos = [
@@ -11,13 +12,13 @@ const techLogos = [
   { node: <Icon icon="logos:nextjs-icon" width="80" height="80" />, title: "Next.js", href: "https://nextjs.org/docs" },
   { node: <Icon icon="logos:typescript-icon" width="80" height="80" />, title: "TypeScript", href: "https://www.typescriptlang.org/docs/" },
   { node: <Icon icon="logos:figma" width="80" height="80" />, title: "Figma", href: "https://help.figma.com/hc/en-us" },
-  { node: <img src="/tanstackLogo.png" alt="Tanstack" width="80" height="80" />, title: "Tanstack", href: "https://tanstack.com/" },
+  { node: <Image src="/tanstackLogo.png" alt="Tanstack" width={80} height={80} />, title: "Tanstack", href: "https://tanstack.com/" },
   { node: <Icon icon="devicon:swiper" width="80" height="80" />, title: "Swiper", href: "https://swiperjs.com/react" },
   { node: <Icon icon="logos:ant-design" width="80" height="80" />, title: "AntDesign", href: "https://ant.design/docs/react/introduce" },
-  { node: <Icon icon="devicon-plain:zustand" width="80" height="80"  />, title: "Zustand", href: "https://docs.pmnd.rs/zustand/getting-started/introduction" },
+  { node: <Icon icon="devicon-plain:zustand" width="80" height="80" />, title: "Zustand", href: "https://docs.pmnd.rs/zustand/getting-started/introduction" },
   { node: <Icon icon="logos:zod" width="80" height="80" />, title: "Zod", href: "https://zod.dev/" },
 ];
- 
+
 export default function Skills() {
   return (
     <div id='skills' className="h-fit relative overflow-hidden text-white">

@@ -1,3 +1,5 @@
+
+import { Image } from "antd";
 import React from "react";
 
 export default function About() {
@@ -39,10 +41,10 @@ export default function About() {
 
       {/* Sağ bölüm */}
       <div className="md:w-1/3 flex justify-center">
-        <img
+        <Image
           src="/profil.jpeg"
           alt="Profile"
-          className="size-screen md:h-screen object-cover rounded-lg shadow-lg"
+          className="size-screen md:h-screen rounded-lg shadow-lg"
         />
 
       </div>
