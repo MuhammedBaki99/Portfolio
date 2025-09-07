@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="flex flex-col gap-4 absolute top-1/2 left-2 md:left-1/15 transform -translate-y-1/2"> 
         <SplitText
           text="Muhammed Baki"
-          className="text-xl md:text-4xl font-normal text-center text-foreground"
+          className="text-2xl md:text-4xl font-normal text-center text-foreground"
           delay={100}
           duration={0.6}
           ease="power3.out"
@@ -33,7 +33,7 @@ export default function Hero() {
         />
         <SplitText
           text="Caglayan"
-          className="text-2xl md:text-6xl font-extrabold text-center text-muted-foreground pb-3" 
+          className="text-3xl md:text-6xl font-extrabold text-center text-muted-foreground pb-3" 
           delay={100}
           duration={0.6}
           ease="power3.out"
@@ -46,7 +46,7 @@ export default function Hero() {
         />
         <TextType
           text={["Frontend Developer", "Modern ve hızlı web çözümleri", "Hayalinizdeki siteye bir adım daha!"]}
-          className="text-md md:text-3xl font-normal text-start text-foreground bg-primary p-1"
+          className="text-lg md:text-3xl font-normal text-start text-foreground bg-primary p-1"
           typingSpeed={75}
           pauseDuration={1500}
           showCursor={true}

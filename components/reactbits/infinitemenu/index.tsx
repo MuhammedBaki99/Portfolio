@@ -2,6 +2,7 @@
 
 import { FC, useRef, useState, useEffect } from 'react';
 import { mat4, quat, vec2, vec3 } from 'gl-matrix';
+import { Icon } from '@iconify/react';
 
 const discVertShaderSource = `#version 300 es
 
@@ -1110,7 +1111,6 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
 
       {activeItem && (
         <div className="pointer-events-none w-full h-full absolute inset-0 flex flex-col justify-between">
-          {/* Title */}
           <div className="flex justify-center items-start w-full mt-8 sm:mt-12 md:mt-16 pointer-events-none">
             <h2
               className={`
@@ -1127,8 +1127,8 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
                 duration-500
                 ease-[cubic-bezier(0.25,0.1,0.25,1.0)]
                 ${isMoving
-                  ? 'opacity-0 scale-95'
-                  : 'opacity-100 scale-100'
+                ? 'opacity-0 scale-95 pointer-events-none duration-100'
+                : 'opacity-100 scale-100 pointer-events-auto duration-500'
                 }
                 max-w-[90vw]
                 px-2
@@ -1220,7 +1220,7 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
               tabIndex={isMoving ? -1 : 0}
               aria-label="Go to link"
             >
-              <span className="select-none text-[#060010] text-2xl sm:text-3xl md:text-4xl">&#x2197;</span>
+              <span className="select-none text-[#060010] text-2xl sm:text-3xl md:text-4xl"><Icon icon="uil:arrow-up-right" width="48" height="48" /></span>
             </button>
           </div>
         </div>
