@@ -33,7 +33,7 @@ export default function Hero() {
         />
         <SplitText
           text="Caglayan"
-          className="text-2xl md:text-6xl font-extrabold text-center text-foreground pb-3" 
+          className="text-2xl md:text-6xl font-extrabold text-center text-muted-foreground pb-3" 
           delay={100}
           duration={0.6}
           ease="power3.out"

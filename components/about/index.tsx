@@ -4,16 +4,16 @@ import React from "react";
 
 export default function About() {
   return (
-    <section id="hakkımda" className="flex flex-col md:flex-row items-center bg-card justify-between min-h-screen text-white ">
+    <section id="hakkımda" className="flex flex-col lg:flex-row items-center bg-card justify-between min-h-screen text-white ">
 
-      <div className="md:w-2/3 mb-10 md:mb-0 p-2 md:pl-40 flex flex-col items-start justify-around h-screen">
+      <div className="lg:w-2/3 mb-10 lg:mb-0 p-2 lg:pl-40 flex flex-col items-start justify-around h-screen">
         <div>
           <h2 className="text-4xl font-bold mb-2 border-b-2 border-primary inline-block">
             Hakkımda
           </h2>
-          <p className="text-sm md:text-md text-gray-400 mb-8">muhammedbakicaglayan@gmail.com</p>
+          <p className="text-sm lg:text-md text-gray-400 mb-8">muhammedbakicaglayan@gmail.com</p>
         </div>
-        <div className="w-full md:w-2/3 text-justify md:text-xl text-gray-200 leading-relaxed space-y-4">
+        <div className="w-full lg:w-2/3 text-justify lg:text-xl text-gray-200 leading-relaxed space-y-4">
           <p>
             Modern frontend dünyasında <span className="font-semibold text-primary">TypeScript</span> ve <span className="font-semibold text-primary">React</span> tabanlı uygulamalar geliştiriyor, temiz ve sürdürülebilir kod yazmaya özen gösteriyorum.
           </p>
@@ -40,11 +40,11 @@ export default function About() {
       </div>
 
       {/* Sağ bölüm */}
-      <div className="md:w-1/3 flex justify-center">
+      <div className="lg:w-1/3 flex justify-center">
         <Image
           src="/profil.jpeg"
           alt="Profile"
-          className="size-screen md:h-screen rounded-lg shadow-lg"
+          className="size-screen lg:h-screen rounded-lg shadow-lg"
         />
 
       </div>
