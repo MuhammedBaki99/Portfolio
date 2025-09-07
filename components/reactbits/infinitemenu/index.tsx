@@ -1143,7 +1143,7 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
           </div>
 
           {/* Description */}
-          <div className="flex justify-center items-end w-full flex-1 pointer-events-none">
+          <div className="absolute bottom-10 flex justify-center items-end w-full flex-1 pointer-events-none">
             <div className="relative w-full flex justify-center">
               <div
                 className={`
@@ -1194,7 +1194,7 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
             </div>
           </div>
 
-          <div className="flex justify-center items-end w-full mb-8 sm:mb-12 md:mb-16 pointer-events-none">
+          <div className="absolute bottom-0 flex justify-center items-end w-full mb-8 sm:mb-12 md:mb-16 pointer-events-none">
             <button
               onClick={handleButtonClick}
               className={`
