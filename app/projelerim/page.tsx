@@ -62,6 +62,15 @@ const projects = [
     languages: ["Next.js", "CSS"],
     url: "https://www.yayladansofraya.com.tr/"
   },
+  {
+    image: "/translateapp.jpg",
+    logo: "/translateapplogo.png",
+    alt: "Translate App proje ekran görüntüsü",
+    title: "Translate App",
+    description: "Çok dilli çeviri uygulaması. Modern arayüz ve hızlı çeviri deneyimi.",
+    languages: ["Next.js", "TypeScript", "TailwindCSS", "API"],
+    url: "https://translateapp-jet.vercel.app/"
+  },
 ]
 export default function ProjectPage() {
   const cardsRef = useRef<(HTMLAnchorElement | null)[]>([]);
