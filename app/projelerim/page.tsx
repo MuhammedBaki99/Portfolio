@@ -94,7 +94,7 @@ export default function ProjectPage() {
 
   return (
     <div className="max-w-6xl mx-auto min-h-screen bg-background text-white py-16 px-4">
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center flex-wrap">
         <Link
           href="/"
           className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-white font-semibold shadow-lg hover:bg-primary/80 transition-colors duration-200 mb-6"
